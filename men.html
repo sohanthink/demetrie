@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!--  =================================
+        nav section is starting from here
+    ================================ -->
+
+
+    <div id="nav" class="scrolled">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="nav_container">
+                        <div class="left">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="http://">Mens</a></li>
+                                <li><a href="http://">Womens</a></li>
+                            </ul>
+                        </div>
+                        <div class="middle">
+                            <div class="logo"><img class="w-100" src="assets/images/logo/logo.png" alt=""></div>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li><a href="http://"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="http://"><i class="fa-solid fa-circle-user"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+        // nav fixed after scroll
+        const nav = document.getElementById("nav");
+        const threshold = 100; // Scrolling threshold in pixels
+
+        window.addEventListener("scroll", function () {
+            const scrolled = window.scrollY;
+            if (scrolled >= threshold) {
+                nav.classList.add("scrolled"); // Add "scrolled" class on scroll
+            } else {
+                nav.classList.remove("scrolled"); // Remove "scrolled" class on back scroll
+            }
+        });
+
+    </script>
+
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+</body>
+
+</html>

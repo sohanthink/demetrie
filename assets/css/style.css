@@ -97,7 +97,7 @@ img {
   align-items: center;
 }
 /* ==================================
-==============button 57 css
+==============button 57 and 39 css
 ================================== */
 
 .button-57 span:first-child {
@@ -145,6 +145,41 @@ img {
   opacity: 1;
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
+.button-39 {
+  background-color: #ffffff;
+  border: 1px solid rgb(209, 213, 219);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  text-decoration: none #d1d5db solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-39:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.button-39:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-39:focus-visible {
+  box-shadow: none;
+}
 /* ==================================
 ========================== navbar css
 ================================== */
@@ -157,15 +192,31 @@ img {
   background-color: rgba(255, 255, 255, 0);
   transition: all linear 0.4s;
 }
+#nav ul {
+  margin-bottom: 0;
+}
 
 #nav .middle .logo {
-  height: 100px;
+  height: 90px;
   width: 150px;
 }
 #nav .nav_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#nav .nav_container .left,
+.middle {
+  display: flex;
+  width: 33%;
+}
+#nav .nav_container .middle {
+  justify-content: center;
+}
+#nav .nav_container .right {
+  justify-content: end;
+  width: 33%;
+  display: flex;
 }
 #nav .nav_container ul {
   display: flex;
@@ -331,6 +382,7 @@ img {
 }
 .footer .footer_content .footer_label {
   padding: 5px 20px;
+  border: none;
 }
 
 .button-57 {
