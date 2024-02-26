@@ -18,7 +18,7 @@
 html,
 body {
   scroll-behavior: smooth;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   margin: 0;
   padding: 0;
   overflow: visible;
@@ -99,6 +99,22 @@ img {
 /* ==================================
 ==============button 57 and 39 css
 ================================== */
+.button-57 {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
 
 .button-57 span:first-child {
   position: relative;
@@ -231,7 +247,8 @@ img {
 }
 
 #nav.scrolled {
-  background-color: #f5f5eb;
+  /* background-color: #f5f5eb; */
+  background-color: white;
   position: fixed;
   color: grey;
 }
@@ -351,6 +368,13 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.title_div h2 {
+  text-align: center;
+  font-family: var(--primary-font);
+  padding: 70px 0;
+  font-weight: 600;
+  font-size: 35px;
+}
 
 /* ==================================
 ===== footer section  css
@@ -376,28 +400,31 @@ img {
 }
 .footer .footer_content .subscribe button {
   background-color: white;
-  border: none;
-  padding: 5px 20px;
+  border: 0.5px solid grey;
+  padding: 11px 20px;
   color: grey;
+  border-radius: 10px;
 }
 .footer .footer_content .footer_label {
-  padding: 5px 20px;
+  padding: 10px 20px 10px 0;
   border: none;
+  border-bottom: 1px solid black;
 }
 
-.button-57 {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid #18181a;
-  color: #18181a;
-  display: inline-block;
-  font-size: 15px;
-  line-height: 15px;
-  padding: 18px 18px 17px;
-  text-decoration: none;
-  cursor: pointer;
-  background: #fff;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+/* ==================================
+===== about banner section  css
+================================== */
+
+.man_banner {
+  height: 100vh; /* Adjust the height as needed */
+  background-image: url("../images/men/man\ banner.jpg");
+  background-size: cover;
+  background-position: top;
+  color: white; /* Text color */
+  text-align: center;
+}
+.man_banner h1 {
+  font-size: 60px;
+  font-family: var(--primary-font);
+  font-weight: 600;
 }
