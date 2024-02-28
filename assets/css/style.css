@@ -456,6 +456,10 @@ img {
   color: white; /* Text color */
   text-align: center;
 }
+.man_banner .overlay {
+  background: #00000054;
+  height: 100%;
+}
 .man_banner h1 {
   font-size: 100px;
   font-family: francy;
@@ -631,6 +635,10 @@ img {
   background-position: top;
   color: white; /* Text color */
   text-align: center;
+}
+.women_banner .overlay {
+  background: #00000054;
+  height: 100%;
 }
 .women_banner h1 {
   font-size: 100px;
