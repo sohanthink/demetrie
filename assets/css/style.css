@@ -435,14 +435,14 @@ img {
 
 .man_banner {
   height: 100vh; /* Adjust the height as needed */
-  background-image: url("../images/men/man\ banner.jpg");
+  background-image: url("../images/men/man_banner.jpeg");
   background-size: cover;
   background-position: top;
   color: white; /* Text color */
   text-align: center;
 }
 .man_banner h1 {
-  font-size: 60px;
+  font-size: 100px;
   font-family: var(--primary-font);
   font-weight: 600;
 }
