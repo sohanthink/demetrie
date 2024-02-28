@@ -100,8 +100,10 @@ img {
 ================================== */
 
 :root {
-  --primary-font: " Raleway ", sans-serif;
-  --secondary-font: "Lora", serif;
+  /* --primary-font: " Raleway ", sans-serif; */
+  --primary-font: "ethos-nova";
+  /* --secondary-font: "Lora", serif; */
+  --secondary-font: "francy";
   --primary-color: #f5f5eb;
 }
 
@@ -616,4 +618,22 @@ img {
   bottom: 0;
   left: 0;
   color: white;
+}
+
+/* ==================================
+===== women main banner section  css
+================================== */
+
+.women_banner {
+  height: 100vh; /* Adjust the height as needed */
+  background-image: url("../images/women/women_banner.jpeg");
+  background-size: cover;
+  background-position: top;
+  color: white; /* Text color */
+  text-align: center;
+}
+.women_banner h1 {
+  font-size: 100px;
+  font-family: var(--secondary-font);
+  line-height: 80px;
 }

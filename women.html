@@ -4,24 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- lora font -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet"> -->
-    <!-- raleway font -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet"> -->
+    <title>Women's</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-
 
     <!--  =================================
         nav section is starting from here
@@ -35,7 +24,7 @@
                     <div class="nav_container">
                         <div class="left">
                             <ul>
-                                <li><a href="http://">Home</a></li>
+                                <li><a href="index.html">Home</a></li>
                                 <li><a href="men.html">Mens</a></li>
                                 <li><a href="women.html">Womens</a></li>
                             </ul>
@@ -57,83 +46,20 @@
 
 
 
-
-
-    <div class="video-banner">
-        <video class="video" src="assets/video/video.webm" poster="assets/video/video-banner.jpg " muted autoplay
-            loop></video>
-        <div class="banner-content">
-            <a href="men.html">
-                <button class="button-57" role="button"><span class="text">Men's</span><span>Shop</span></button>
-            </a>
-            <button class="button-57" role="button"><span class="text">Womens's</span><span>Shop</span></button>
-        </div>
-    </div>
-
     <!--  =================================
-        nav section is starting from here
+    image banner section is starting from here
     ================================ -->
 
-
-
-    <section class="scroll_product fade-in">
-        <div class="main">
-            <div class="left">
-                <div class="overflow-auto">
-                    <div class="image-container">
-                        <img src="assets/video/video-banner.jpg" alt="Image 1">
-                        <div class="overlay">
-                            <div class="title"><button class="button-39" role="button">Dress</button></div>
-                        </div>
-                    </div>
-                    <div class="image-container">
-                        <img src="assets/video/video-banner.jpg" alt="Image 1">
-                        <div class="overlay">
-                            <div class="title"><button class="button-39" role="button">Bag's</button></div>
-                        </div>
-                    </div>
-                    <div class="image-container">
-                        <img src="assets/video/video-banner.jpg" alt="Image 1">
-                        <div class="overlay">
-                            <div class="title"><button class="button-39" role="button">Under</button></div>
-                        </div>
-                    </div>
-                    <!-- Add more image containers as needed -->
-                </div>
-            </div>
-            <div class="right">
-                <div class="overflow-auto">
-                    <div class="image-container">
-                        <img src="assets/video/video-banner.jpg" alt="Image 1">
-                        <div class="overlay">
-                            <div class="title"><button class="button-39" role="button">Summer</button></div>
-                        </div>
-                    </div>
-                    <!-- Add more image containers as needed -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-    <!--  =================================
-        image banner  section is starting from here
-    ================================ -->
-
-    <section class="title_div">
-        <h2>Fashionable Product's</h2>
-    </section>
-    <section class="fade-in image-banner-section">
+    <section class="fade-in women_banner">
         <div class="image-centered-div">
-            <!-- <h1>Welcome to the store</h1> -->
+            <h1>Welcome to the Female's</h1>
             <!-- <p>Learn more about our services.</p>
             <button>Contact Us</button>
         </div> -->
     </section>
+
+
+
 
 
     <!--  =================================
@@ -171,6 +97,9 @@
 
 
 
+
+
+
     <script>
 
         // nav fixed after scroll
@@ -185,6 +114,37 @@
                 nav.classList.remove("scrolled"); // Remove "scrolled" class on back scroll
             }
         });
+
+
+
+        let slider = document.getElementById('slider');
+        let interval;
+
+        function startSlider() {
+            interval = setInterval(() => {
+                slider.style.transform = `translateX(-100%)`;
+            }, 1000); // Adjust the value to change the speed (milliseconds)
+        }
+
+        function stopSlider() {
+            clearInterval(interval);
+        }
+
+        slider.addEventListener('mouseenter', () => {
+            stopSlider();
+            slider.classList.add('paused'); // Add a class to visually indicate pause
+        });
+
+        slider.addEventListener('mouseleave', () => {
+            if (slider.classList.contains('paused')) { // Only start if paused
+                startSlider();
+                slider.classList.remove('paused'); // Remove paused class
+            }
+        });
+
+        startSlider();
+
+
 
     </script>
 
