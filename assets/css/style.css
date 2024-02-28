@@ -88,6 +88,7 @@ img {
 
 :root {
   --primary-font: " Raleway ", sans-serif;
+  --secondary-font: "Lora", serif;
   --primary-color: #f5f5eb;
 }
 
@@ -447,13 +448,14 @@ img {
 }
 
 /* ==================================
-===== about slider section  css
+===== about new colllection section  css
 ================================== */
+
 .new_man {
   padding: 20px 0;
 }
 .new_man h2 {
-  padding: 50px 0;
+  padding: 10px 0px 50px 0px;
   font-size: 30px;
   font-family: var(--primary-font);
   font-weight: 600;
@@ -524,4 +526,83 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+/* ==================================
+===== about all colllection section  css
+================================== */
+
+.all {
+  padding: 20px 0;
+}
+.all h2 {
+  padding: 50px 0;
+  font-size: 30px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+
+.all .main {
+  padding: 6px 0;
+}
+.all .main .product_details {
+  padding: 20px;
+  margin-top: 25px;
+}
+.all .main .product_details p {
+  font-size: 16px;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  line-height: 2px;
+  color: grey;
+}
+.all .main .product_details h6 {
+  font-size: 15px;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  color: rgb(101, 99, 99);
+}
+
+.all .products {
+  position: relative;
+}
+
+.all .slide-image {
+  width: 100%;
+  height: 500px;
+}
+
+.all .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.all .products:hover .overlay {
+  opacity: 1;
+}
+
+.all .hover_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.all .overlay:hover .hover_img {
+  display: block;
+}
+.all .overlay h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
 }
